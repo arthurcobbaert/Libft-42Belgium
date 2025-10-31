@@ -6,9 +6,11 @@
 /*   By: acobbaer <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 16:57:45 by acobbaer          #+#    #+#             */
-/*   Updated: 2025/10/30 17:50:09 by acobbaer         ###   ########.fr       */
+/*   Updated: 2025/10/31 20:52:05 by acobbaer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

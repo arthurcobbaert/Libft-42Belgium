@@ -6,7 +6,7 @@
 /*   By: acobbaer <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 16:52:01 by acobbaer          #+#    #+#             */
-/*   Updated: 2025/10/30 16:02:02 by acobbaer         ###   ########.fr       */
+/*   Updated: 2025/10/31 20:49:47 by acobbaer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static void	ft_move(unsigned char *d, const unsigned char *s, size_t n)
 	{
 		while (i < n)
 		{
-			d[i] = [i];
+			d[i] = s[i];
 			i++;
 		}
 	}

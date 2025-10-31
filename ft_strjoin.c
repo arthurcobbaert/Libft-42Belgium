@@ -6,20 +6,11 @@
 /*   By: acobbaer <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 18:12:52 by acobbaer          #+#    #+#             */
-/*   Updated: 2025/10/30 14:16:41 by acobbaer         ###   ########.fr       */
+/*   Updated: 2025/10/31 20:57:16 by acobbaer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
-
-size_t	ft_strlen(const char *s)
-{
-	size_t		i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-}
 
 char	*ft_strcpy(char *dst, const char *src)
 {

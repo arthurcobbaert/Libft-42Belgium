@@ -6,7 +6,7 @@
 /*   By: acobbaer <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 18:07:19 by acobbaer          #+#    #+#             */
-/*   Updated: 2025/10/30 14:27:34 by acobbaer         ###   ########.fr       */
+/*   Updated: 2025/10/31 20:49:19 by acobbaer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	i = 0;
 	total = nmemb * size;
-	if (total / count != size)
+	if (total / nmemb != size)
 		return (NULL);
-	res = malloc(tatl);
+	res = malloc(total);
 	if (!res)
 		return (NULL);
 	while (i < total)
