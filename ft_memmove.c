@@ -21,7 +21,7 @@ static void	ft_move(unsigned char *d, const unsigned char *s, size_t n)
 	{
 		while (i < n)
 		{
-			d[i] = [i];
+			d[i] = s[i];
 			i++;
 		}
 	}
