@@ -6,9 +6,10 @@
 /*   By: acobbaer <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 18:12:52 by acobbaer          #+#    #+#             */
-/*   Updated: 2025/10/31 20:04:27 by tlogtenb         ###   ########.fr       */
+/*   Updated: 2025/10/31 20:57:16 by acobbaer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strcpy(char *dst, const char *src)
