@@ -6,7 +6,7 @@
 /*   By: acobbaer <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 20:15:20 by acobbaer          #+#    #+#             */
-/*   Updated: 2025/10/30 14:18:32 by acobbaer         ###   ########.fr       */
+/*   Updated: 2025/11/03 20:38:40 by acobbaer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,10 @@ static	size_t	ft_countwords(const char *s, char c)
 	size_t		i;
 	size_t		count;
 
+	if (!s)
+		return (0);
+	if (!c)
+		return (1);
 	count = 0;
 	i = 0;
 	while (s[i])
@@ -39,7 +43,7 @@ static char	*ft_copyword(const char *s, char c)
 	char		*res;
 
 	i = 0;
-	while (s[i])
+	while (s[i] && s[i] != c)
 		i++;
 	res = malloc((i + 1) * sizeof(char));
 	if (!res)
@@ -63,6 +67,8 @@ char	**ft_split(char const *s, char c)
 	res = malloc((ft_countwords(s, c) + 1) * sizeof(char *));
 	if (!res)
 		return (NULL);
+	if (!s)
+		return (NULL);
 	i = 0;
 	j = 0;
 	while (s[i])
@@ -74,7 +80,7 @@ char	**ft_split(char const *s, char c)
 		}
 		i++;
 	}
-	res[j] = "NULL";
+	res[j] = 0;
 	return (res);
 }
 /*
