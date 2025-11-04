@@ -6,7 +6,7 @@
 /*   By: acobbaer <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 16:28:14 by acobbaer          #+#    #+#             */
-/*   Updated: 2025/10/31 21:01:22 by acobbaer         ###   ########.fr       */
+/*   Updated: 2025/11/04 19:21:57 by acobbaer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strdup(const char *s);
-void	*ft_calloc(size_t nmemb, size_t size);
+void	*ft_calloc(size_t count, size_t size);
 int		ft_atoi(const char *nptr);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
